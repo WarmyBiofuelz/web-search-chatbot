@@ -1,0 +1,11 @@
+[project]
+name = "web-search-chatbot"
+version = "0.1.0"
+description = "A Streamlit chatbot with OpenAI integration"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "streamlit>=1.28.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
