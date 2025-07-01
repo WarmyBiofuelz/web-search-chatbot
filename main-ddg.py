@@ -9,9 +9,14 @@ from duckduckgo_search import DDGS
 load_dotenv()
 
 SYSTEM_PROMPT = (
-    "Atsakyk tik lietuvių kalba, nepriklausomai nuo klausimo kalbos. "
-    "Jei neturi informacijos, naudok 'web_search' įrankį (DuckDuckGo) ieškoti atsakymo internete. "
-    "Kai reikia, naudok web_search įrankį, kad surastum naujausią informaciją."
+    "Your knowledge is mostly limited to the end of 2023, and now it is 2025. "
+    "When answering questions involving current events, recent data, or real-time updates, ALWAYS use the web_search tool (DuckDuckGo) to find accurate and up-to-date information. "
+    "If you are unsure or do not have the information, use the web_search tool to look it up online. "
+    "Do not guess or answer from your own knowledge for current or factual questions—always use the web_search tool. "
+    "Example:\n"
+    "User: What is the date today?\n"
+    "Assistant: [uses web_search tool to find the current date]\n"
+    "Whenever needed, use the web_search tool to find the latest information."
 )
 
 api_key = os.getenv("SECRET2")
